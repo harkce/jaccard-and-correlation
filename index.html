@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jaccard and Correlation Coefficient</title>
+	<!--Import Google Icon Font-->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="css/materialize.min.css">
+	<!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+	<script src="js/materialize.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<body class="grey lighten-4">
+
+	<div style="height: 278px;" class="pink s12">
+	</div>
+    <div class="row"  style="margin-top: -100px">
+	    <div class="col s10 offset-s1 m8 offset-m2 grey lighten-1" style="height: 0.5em">
+	    </div>
+	    <div class="col s10 offset-s1 m8 offset-m2 white z-depth-3" style="padding: 20px 35px">
+			<h4>Jaccard and Correlation Coefficient</h4>
+			<div>
+				<div id="content">
+                    <p style="padding-bottom: 0.1em">Machine Learning 1st Assignment - Programming Section Part 1</p>
+                    <br>
+                    <h5>Coefficient score between 2 movies</h5>
+                    <div class="row">
+                        <div class="input-field">
+                            <input name="movie_1" id="movie_1" type="number" min="1" max="1682" required class="validate">
+                            <label for="movie_1">Movie 1 ID</label>
+                            <span class="right" id="txt_movie1">
+                            </span>
+                        </div>
+                        <br>
+                        <div class="input-field">
+                            <input name="movie_2" id="movie_2" type="number" min="1" max="1682" required class="validate">
+                            <label for="movie_2">Movie 2 ID</label>
+                            <span class="right" id="txt_movie2">
+                            </span>
+                        </div>
+                        <br>
+                        <div class="input-field">
+                            <span class="left">
+                                <p id="jaccard_score"></p>
+                                <p id="correlation_score"></p>
+                            </span>
+                            <span class="right">
+                                <button id="calculate" class="btn-large waves-effect waves-light blue" style="margin-top: 1em">Calculate</button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <h5>5 movies with highest similarity</h5>
+                    <p style="padding-bottom: 0.1em">this might take 8-10 minutes</p>
+                    <div class="row">
+                        <div class="input-field">
+                            <input name="movie" id="movie" type="number" min="1" max="1682" required class="validate">
+                            <label for="movie">Movie ID</label>
+                            <span class="right" id="txt_movie">
+                            </span>
+                        </div>
+                        <br>
+                        <div class="input-field">
+                            <span class="left">
+                                <p id="validate"></p>
+                            </span>
+                            <span class="right">
+                                <button id="search" class="btn-large waves-effect waves-light blue" style="margin-top: 1em">Search</button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s6">
+                            <p id="jaccard_result"></p>
+                        </div>
+                        <div class="col s6">
+                            <p id="correlation_result"></p>
+                        </div>
+                    </div>
+                </div>
+			</div>
+	    </div>
+	    <div class="col s10 offset-s1 m6 offset-m3 center-align grey-text text-darken-1">
+    		<br>
+    		<b>Muhammad Habib Fikri Sundayana - 1301144118</b>
+	    	<br>
+	    	Design by <a href="http://materializecss.com/">Materialize</a>. Crafted by <a href="https://github.com/alvinmatias69/rg_upload_form">alvinmatias69</a>
+	    </div>
+    </div>
+
+    <script src="js/habib.js">
+    </script>
+
+</body>
+</html>
